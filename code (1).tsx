@@ -4,12 +4,12 @@ import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, si
 import { getFirestore, collection, addDoc, getDocs, query, where, orderBy, limit, updateDoc, doc, setDoc, getDoc, onSnapshot } from 'firebase/firestore';
 // Konfigurasi Firebase - GANTI DENGAN KONFIGURASI ANDA
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY || "your-api-key-here",
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN || "your-project.firebaseapp.com",
-  projectId: process.env.REACT_APP_PROJECT_ID || "your-project-id",
-  storageBucket: process.env.REACT_APP_STORAGE_BUCKET || "your-project.appspot.com",
-  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID || "123456789",
-  appId: process.env.REACT_APP_APP_ID || "your-app-id"
+  apiKey: process.env.REACT_APP_API_KEY || "AIzaSyBPLDXtbP-sKWdSXbEzPcpm1iWaaVe0LQ4",
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN || "ghozi-tech.firebaseapp.com",
+  projectId: process.env.REACT_APP_PROJECT_ID || "ghozi-tech",
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET || "ghozi-tech.firebasestorage.app",
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID || "1007492022053",
+  appId: process.env.REACT_APP_APP_ID || "1:1007492022053:web:412fc1181cab1daca324cc"
 };
 
 // Inisialisasi Firebase
