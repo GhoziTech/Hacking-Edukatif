@@ -1,1 +1,8 @@
-{ "name": "ghozitech-game", "version": "1.0.0", "description": "Game Simulasi Hacking Edukatif GHOZITECH", "main": "src/App.tsx", "scripts": { "dev": "vite", "build": "tsc && vite build", "preview": "vite preview" }, "dependencies": { "react": "^18.2.0", "react-dom": "^18.2.0", "firebase": "^10.7.1" }, "devDependencies": { "@types/react": "^18.2.0", "@types/react-dom": "^18.2.0", "@vitejs/plugin-react": "^4.2.0", "typescript": "^5.2.0", "vite": "^5.0.0" } }
+{ "name": "ghozitech-game", "version": "1.0.0", "description": "Game Simulasi Hacking Edukatif GHOZITECH", "main": "src/App.tsx", "scripts": { "dev": "vite", "build": "tsc && vite build", "preview": "vite preview" }, "dependencies": { "react": "^18.2.0", "react-dom": "^18.2.0", "firebase": "^10.7.1" }, "devDependencies": { "@types/react": "^18.2.0", "@types/react-dom": "^18.2.0", "@vitejs/plugin-react": "^4.2.0", "typescript": "^5.9.2", "vite": "^5.0.0" } }
+{
+  "hosting": {
+    "public": "dist",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [{ "source": "**", "destination": "/index.html" }]
+  }
+}
